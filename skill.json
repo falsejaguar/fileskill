@@ -1,0 +1,6 @@
+{
+  "name": "filesystem-skill",
+  "description": "Full recursive filesystem access to /main with safe-mode toggle.",
+  "version": "1.0.0",
+  "tools": ["filesystem.json"]
+}
