@@ -1,0 +1,76 @@
+{
+  "name": "filesystem",
+  "description": "Filesystem operations inside /main",
+  "functions": [
+    {
+      "name": "fs_read",
+      "description": "Read a file from /main",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" }
+        },
+        "required": ["path"]
+      }
+    },
+    {
+      "name": "fs_write",
+      "description": "Write content to a file in /main",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" },
+          "content": { "type": "string" },
+          "safe_mode": { "type": "boolean", "default": true }
+        },
+        "required": ["path", "content"]
+      }
+    },
+    {
+      "name": "fs_delete",
+      "description": "Delete a file",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" },
+          "safe_mode": { "type": "boolean", "default": true }
+        },
+        "required": ["path"]
+      }
+    },
+    {
+      "name": "fs_list",
+      "description": "List directory contents",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" }
+        },
+        "required": ["path"]
+      }
+    },
+    {
+      "name": "fs_mkdir",
+      "description": "Create a directory",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" }
+        },
+        "required": ["path"]
+      }
+    },
+    {
+      "name": "fs_rmdir",
+      "description": "Remove a directory",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" },
+          "safe_mode": { "type": "boolean", "default": true }
+        },
+        "required": ["path"]
+      }
+    }
+  ]
+}

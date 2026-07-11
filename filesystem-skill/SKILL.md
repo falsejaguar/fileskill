@@ -7,9 +7,9 @@ Provides full recursive read/write/delete/list access to `/main`.
 - `safe_mode=false` → unrestricted
 
 ## Tools
-- `fs_read`
-- `fs_write`
-- `fs_delete`
-- `fs_list`
-- `fs_mkdir`
-- `fs_rmdir`
+- fs_read
+- fs_write
+- fs_delete
+- fs_list
+- fs_mkdir
+- fs_rmdir

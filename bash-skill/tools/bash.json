@@ -1,0 +1,18 @@
+{
+  "name": "bash_exec",
+  "description": "Run bash commands",
+  "functions": [
+    {
+      "name": "run_bash",
+      "description": "Execute a bash command",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "command": { "type": "string" },
+          "safe_mode": { "type": "boolean", "default": true }
+        },
+        "required": ["command"]
+      }
+    }
+  ]
+}

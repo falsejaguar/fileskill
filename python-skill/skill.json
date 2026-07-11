@@ -1,0 +1,6 @@
+{
+  "name": "python-skill",
+  "description": "Execute Python code inside the container.",
+  "version": "1.0.0",
+  "tools": ["python.json"]
+}

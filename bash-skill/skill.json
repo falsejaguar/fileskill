@@ -1,0 +1,6 @@
+{
+  "name": "bash-skill",
+  "description": "Execute bash commands inside the container.",
+  "version": "1.0.0",
+  "tools": ["bash.json"]
+}
